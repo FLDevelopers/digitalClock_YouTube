@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: aqua;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a0a0a;
+    font-size: 5rem;
+    font-weight: 1000;
+}
+
+#clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    border-radius: 15px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from{
+        box-shadow: 0 0 20px white;
+    }
+    to{
+        box-shadow: 0 0 30px white;
+    }
+}
